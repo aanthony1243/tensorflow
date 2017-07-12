@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'env.GOPATH=$PWD'
-                sh 'mkdir -p $GOPATH/src/
+                sh 'mkdir -p $GOPATH/src/'
                 dir('$GOPATH/src/') {
                     sh 'go version'
                     sh 'echo $GOPATH'
